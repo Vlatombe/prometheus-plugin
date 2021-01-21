@@ -1,5 +1,6 @@
 package org.jenkinsci.plugins.prometheus;
 
+import hudson.Extension;
 import hudson.model.Label;
 import hudson.model.LoadStatistics;
 import io.prometheus.client.Collector;
@@ -12,6 +13,7 @@ import org.slf4j.LoggerFactory;
 import java.util.ArrayList;
 import java.util.List;
 
+@Extension
 public class ExecutorCollector extends Collector {
 
     private static final Logger logger = LoggerFactory.getLogger(ExecutorCollector.class);

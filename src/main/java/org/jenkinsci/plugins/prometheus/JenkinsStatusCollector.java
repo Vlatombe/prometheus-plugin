@@ -1,5 +1,6 @@
 package org.jenkinsci.plugins.prometheus;
 
+import hudson.Extension;
 import hudson.model.Computer;
 import io.prometheus.client.Collector;
 import io.prometheus.client.Gauge;
@@ -9,6 +10,7 @@ import org.jenkinsci.plugins.prometheus.util.ConfigurationUtils;
 import java.util.ArrayList;
 import java.util.List;
 
+@Extension
 public class JenkinsStatusCollector extends Collector {
 
     @Override

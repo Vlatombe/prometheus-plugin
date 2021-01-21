@@ -15,6 +15,7 @@ import org.jenkinsci.plugins.prometheus.config.PrometheusConfiguration;
 import org.jenkinsci.plugins.prometheus.util.ConfigurationUtils;
 import org.jenkinsci.plugins.prometheus.util.Jobs;
 import org.jenkinsci.plugins.prometheus.util.Runs;
+import org.jenkinsci.plugins.variant.OptionalExtension;
 import org.jenkinsci.plugins.workflow.job.WorkflowRun;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -24,6 +25,7 @@ import java.util.stream.Collectors;
 
 import static org.jenkinsci.plugins.prometheus.util.FlowNodes.getSortedStageNodes;
 
+@OptionalExtension(requirePlugins = "pipeline-rest-api")
 public class JobCollector extends Collector {
 
     private static final Logger logger = LoggerFactory.getLogger(JobCollector.class);

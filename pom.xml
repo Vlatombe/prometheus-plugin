@@ -86,31 +86,37 @@
       <groupId>org.jenkins-ci.plugins.workflow</groupId>
       <artifactId>workflow-api</artifactId>
       <version>${workflow.api.version}</version>
+      <optional>true</optional>
     </dependency>
     <dependency>
       <groupId>org.jenkins-ci.plugins.pipeline-stage-view</groupId>
       <artifactId>pipeline-rest-api</artifactId>
       <version>${pipeline.rest.api.version}</version>
+      <optional>true</optional>
     </dependency>
     <dependency>
       <groupId>org.jenkins-ci.plugins.workflow</groupId>
       <artifactId>workflow-job</artifactId>
       <version>${workflow.job.version}</version>
+      <optional>true</optional>
     </dependency>
     <dependency>
       <groupId>org.jenkins-ci.plugins.workflow</groupId>
       <artifactId>workflow-support</artifactId>
       <version>${workflow.support.version}</version>
+      <optional>true</optional>
     </dependency>
     <dependency>
       <groupId>org.jenkins-ci.plugins.workflow</groupId>
       <artifactId>workflow-step-api</artifactId>
       <version>${workflow.step.version}</version>
+      <optional>true</optional>
     </dependency>
     <dependency>
       <groupId>org.jenkins-ci.plugins</groupId>
       <artifactId>pipeline-graph-analysis</artifactId>
       <version>${pipeline.graph.analysis.version}</version>
+      <optional>true</optional>
     </dependency>
     <dependency>
       <groupId>org.jenkins-ci.plugins</groupId>
@@ -121,6 +127,11 @@
       <groupId>org.jenkins-ci.plugins</groupId>
       <artifactId>script-security</artifactId>
       <version>${script.security.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.jenkins-ci.plugins</groupId>
+      <artifactId>variant</artifactId>
+      <version>1.3</version>
     </dependency>
     <dependency>
       <groupId>org.apache.httpcomponents</groupId>
@@ -166,6 +177,7 @@
       <groupId>org.jenkins-ci.plugins</groupId>
       <artifactId>cloudbees-disk-usage-simple</artifactId>
       <version>${jenkins.diskUsage.version}</version>
+      <optional>true</optional>
     </dependency>
     <dependency>
       <groupId>org.slf4j</groupId>

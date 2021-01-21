@@ -28,11 +28,7 @@ public class DefaultPrometheusMetrics implements PrometheusMetrics {
 
     public DefaultPrometheusMetrics() {
         CollectorRegistry collectorRegistry = CollectorRegistry.defaultRegistry;
-        collectorRegistry.register(new JobCollector());
-        collectorRegistry.register(new JenkinsStatusCollector());
         collectorRegistry.register(new DropwizardExports(Metrics.metricRegistry()));
-        collectorRegistry.register(new DiskUsageCollector());
-        collectorRegistry.register(new ExecutorCollector());
 
         // other collectors from other plugins
         ExtensionList.lookup(Collector.class).forEach( c -> collectorRegistry.register(c));

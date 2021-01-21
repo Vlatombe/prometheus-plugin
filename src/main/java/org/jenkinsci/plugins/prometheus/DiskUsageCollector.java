@@ -5,6 +5,7 @@ import io.prometheus.client.Collector;
 import io.prometheus.client.Gauge;
 import jenkins.model.Jenkins;
 import org.jenkinsci.plugins.prometheus.util.ConfigurationUtils;
+import org.jenkinsci.plugins.variant.OptionalExtension;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -13,6 +14,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
+@OptionalExtension(requirePlugins = "cloudbees-disk-usage-simple")
 public class DiskUsageCollector extends Collector {
 
     private static final Logger logger = LoggerFactory.getLogger(DiskUsageCollector.class);
